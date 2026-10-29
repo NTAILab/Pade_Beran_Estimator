@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pbestimator"
+version = "0.1.0"
+description = "Exact, Taylor and Pade Gaussian-kernel conditional survival estimators"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["numpy>=2.0", "pandas", "scikit-learn", "scikit-survival"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pbestimator*"]
